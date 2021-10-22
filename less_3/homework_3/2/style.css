@@ -1,0 +1,48 @@
+.wrap{
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+#header{
+    height: 150px;
+    background: #d7d7d7;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+
+}
+
+.content_wrap{
+    display: flex;
+    column-gap: 10px;
+ }
+
+#menu{
+    background: #d7d7d7;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    align-items: stretch;
+    width: 200px;
+
+}
+.right{
+    flex-direction: column;
+    display: flex;
+    row-gap: 10px;
+}
+.post{
+    background: #d7d7d7;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    height: 200px;
+    width: 700px;
+    flex-wrap: wrap;
+}
+#footer{
+    margin-top: 10px;
+    height: 150px;
+    background: #d7d7d7;
+    border: 1px solid #000;
+    box-sizing: border-box;
+
+}
