@@ -1,0 +1,40 @@
+.wrap{
+    width: 1000px;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: Roboto;
+    font-size: 20px;
+}
+header, nav, main, .aside, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    height: 150px;
+    background: #357bd7;
+}
+nav{
+    height: 100px;
+    background: #133869;
+}
+
+.main_wrap{
+    display: flex;
+
+}
+main{
+    height: 400px;
+    background: #1689bd;
+    flex-grow: 3;
+}
+
+.aside{
+    height: 400px;
+    background: #2a5ac4;
+    flex-grow: 1;
+}
+footer{
+    height: 150px;
+    background: #32abe0;
+}
