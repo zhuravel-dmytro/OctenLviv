@@ -1,0 +1,43 @@
+.wrap{
+    width: 700px;
+    margin: 0 auto;
+    color: #FFF;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+.header{
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+
+}
+.box, .content__item{
+    background: #266ad0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 300px;
+}
+.box{
+    height: 500px;
+}
+
+.content__item{
+    height: 200px;
+}
+.menu{
+    margin-top: 20px;
+    display: flex;
+    column-gap: 20px;
+
+}
+.items{
+    background: #143785;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 200px;
+}
