@@ -1,0 +1,55 @@
+
+@media screen and (max-width: 600px) {
+    .header__button {
+        height: 80px;
+        width: 250px;
+    }
+
+    .team{
+        height: 100%;
+    }
+    .team__img{
+        flex-grow: 1;
+        width: 400px;
+
+    }
+    .works{
+        height: 100%;
+    }
+    .works__box {
+        flex-grow: 1;
+    }
+    .info{
+        height: 100%;
+        padding-bottom: 10px;
+    }
+    .cards{
+        height: 100%;
+    }
+    .cards__grid{
+        flex-direction: column;
+    }
+    .footer__socmedia{
+        width: 500px;
+        height: 160px;
+    }
+    .socmedis__link{
+        height: 60px;
+        width: 60px;
+    }
+}
+@media screen and (max-width: 1200px) {
+
+    .info__box__images {
+        height: 170px;
+        width: 180px;
+    }
+    .team__img:hover{
+        background-color: rgb(23,123,215,0.1);
+    }
+
+    .works__box{
+        width: 259px;
+        height: 300px;
+    }
+}
