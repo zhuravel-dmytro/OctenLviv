@@ -51,6 +51,9 @@ table {
 }
 
 
+
+/*header top*/
+
 .header{
     background: url("image/bg.png") no-repeat center/cover;
     height: 100vh;
@@ -60,6 +63,9 @@ table {
     justify-content: space-between;
     padding-top: 50px;
     align-items: center;
+}
+.nav__btn__mobile{
+    display: none;
 }
 .header__menu{
     display: flex;
@@ -95,6 +101,7 @@ table {
     flex-direction: column;
     justify-content: center;
     padding-left: 31px;
+    margin-right: 45px;
 }
 .header__phone{
     font-family: Open Sans;
@@ -125,5 +132,107 @@ table {
     padding: 14px;
     background: rgba(255, 116, 0, 1);
     border: none;
-    margin-left: 45px;
+}
+
+/*header main*/
+.header__main{
+position: relative;
+}
+.header__title{
+    margin-top: 232px;
+    color: #D67E35;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header__title h2{
+    font-size: 50px;
+    line-height: 57px;
+    padding-left: 24px;
+}
+.header__title h1{
+    font-size: 80px;
+    line-height: 92px;
+}
+.header__title p{
+    font-family: Open Sans;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__title p::before,
+.header__title p::after{
+    content: ' ';
+    display: block;
+    width: 61px;
+    height: 2px;
+    background-color: #FFF;
+}
+.header__title p::before{
+    margin-right: 10px;
+}
+.header__title p::after{
+    margin-left: 10px;
+}
+
+.header__main .header__btn{
+    margin-top: 21px;
+}
+.header__main__btn{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*header bottom*/
+.header__card{
+    bottom: -100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.card__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 31px;
+    row-gap: 14px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.card__item{
+    width: 349px;
+    height: 328px;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 28px;
+    box-sizing: border-box;
+}
+.card__item{
+    font-family: Tinos;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    color: #2C2C2C;
+}
+.card__item h3{
+    margin-bottom: 20px;
+}
+.card__item span{
+    color: #BC9060;
+}
+.card__item p{
+    text-align: center;
+    color: #656363;
 }
