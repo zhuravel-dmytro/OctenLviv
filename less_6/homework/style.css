@@ -96,7 +96,7 @@ table {
 
 }
 .header__contact{
-    width: 162px;
+    width: 196px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -235,4 +235,173 @@ position: relative;
 .card__item p{
     text-align: center;
     color: #656363;
+}
+
+
+/*section history*/
+.history{
+    padding-top: 390px;
+}
+.row__history__top{
+    margin-bottom: 122px;
+}
+.history__title{
+    max-width: 444px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.history__title h2{
+    font-family: Tinos;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 62px;
+    margin-bottom: 21px;
+}
+.history__title h2 span{
+    color: #D67E34;
+}
+
+.history__title p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+.history__numb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 41px;
+    margin-top: 39px;
+
+}
+.history__numb .numb{
+    max-width: 84px;
+}
+.history__numb .numb h3{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 54px;
+    color: #BC9060;
+    text-align: center;
+}
+
+.history__bottom{
+    background: url("image/bg__history.png") no-repeat center/cover;
+    height: 55vh;
+}
+.row__history__bottom{
+    padding: 81px 0 81px 0;
+}
+
+.title__history__bottom{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.history__bottom__btn{
+    display: flex;
+    justify-content: center;
+    margin-left: 160px;
+}
+
+.title__history__bottom h3{
+    font-family: Tinos;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 60px;
+    color: #D67E34;
+    margin-bottom: 20px;
+}
+.title__history__bottom p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.history__btn{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    background: rgba(255, 116, 0, 1);
+    border: none;
+}
+
+/*section price*/
+.price__title{
+    font-family: Tinos;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 62px;
+    text-align: center;
+}
+.price__title h2 span{
+    color: #D67E34;
+}
+.price__content{
+    padding-top: 139px;
+}
+.price__img{
+    background: url("image/pizza.png") no-repeat center/cover;
+}
+.gam__menu{
+    display: flex;
+    flex-direction: column;
+    row-gap: 29px;
+}
+.gam__menu__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gam__menu__item img{
+    margin-right: 30px;
+}
+.gam__menu__item p{
+    font-family: Tinos;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*.gam__menu__item p::after{*/
+/*    content: " ";*/
+/*    display: block;*/
+/*    width: 204px;*/
+/*    height: 1px;*/
+/*    background-color: #000;*/
+/*    margin: 0px 9px;*/
+/*}*/
+.dashed{
+    border:none;
+    border-bottom:1px dashed #000;
+    display:inline-block;
+    width: 204px;
+    margin: 0px 9px;
+}
+.gam__menu__item span{
+    font-family: Tinos;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
 }

@@ -56,4 +56,46 @@
         font-size: 22px;
         line-height: 25px;
     }
+
+
+    /*section history*/
+    .history {
+        padding-top: 1025px;
+    }
+    .history__title{
+        text-align: center;
+    }
+    .history__numb{
+        margin-top: 130px;
+    }
+    .img__history{
+        width: 290px;
+        margin-top: 55px;
+    }
+    .row__history__bottom{
+        flex-direction: column;
+    }
+    .title__history__bottom h3{
+        font-size: 30px;
+        line-height: 34px;
+        text-align: center;
+    }
+    .title__history__bottom p{
+        text-align: center;
+        margin-bottom: 41px;
+    }
+    .history__bottom__btn{
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .history__bottom{
+        height: 69vh;
+    }
+
+
+    /*section price*/
+    .price{
+        padding-top: 70px ;
+    }
 }
