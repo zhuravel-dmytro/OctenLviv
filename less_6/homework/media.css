@@ -98,4 +98,16 @@
     .price{
         padding-top: 70px ;
     }
+    .gam__menu{
+        row-gap: 80px;
+    }
+    .gam__menu__item span{
+        display: none;
+    }
+
+    /*our menu   проблема потім вирішити*/
+    
 }
+
+
+/*carousel section */

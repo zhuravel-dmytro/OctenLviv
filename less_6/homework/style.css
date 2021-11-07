@@ -343,6 +343,9 @@ position: relative;
 }
 
 /*section price*/
+.price{
+    padding: 132px 0 150px 0;
+}
 .price__title{
     font-family: Tinos;
     font-style: normal;
@@ -404,4 +407,199 @@ position: relative;
     font-weight: normal;
     font-size: 26px;
     line-height: 30px;
+}
+
+/*menu*/
+
+
+.our__menu{
+    padding-top: 100px;
+    padding-bottom: 200px;
+    background: url("image/CHECK OUR MENU.png") no-repeat center/cover;
+}
+.menu__title{
+margin-bottom: 130px;
+}
+.menu__title h2{
+    font-family: Tinos;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 62px;
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.menu__box{
+    width: 350px;
+    height: 510px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.menu__box .recomented{
+    padding: 12px 7px;
+    background: #D67E34;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.box__item{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 216px;
+}
+.img_abs{
+    right: -19px;
+    position: absolute;
+    top: 120px;
+}
+.menu__box h4{
+    font-family: Tinos;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    color: #000000;
+    margin: 17px 0px;
+    text-align: center;
+}
+.menu__box p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+}
+.menu_box_btn{
+    background: #D67E34;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    border: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 14px 67px;
+    margin-top: 20px;
+
+}
+/*carousel section */
+
+.carousel{
+
+}
+.carousel-inner{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #E5E5E5;
+    padding-top: 110px;
+    padding-bottom: 139px;
+}
+.carousel-item{
+    max-width: 920px;
+    text-align: center;
+}
+.carousel-item .review{
+    font-family: Open Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 18px;
+}
+.carousel-item h4{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 16px 0px 9px 0px;
+}
+.carousel-item .name{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+/*.carousel-indicators button{*/
+/*    width: 5px;*/
+/*    height: 5px;*/
+/*    border-radius: 100%;*/
+/*    color: #ef1818;*/
+
+/*}*/
+
+.carousel-indicators [data-bs-target]{
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+}
+
+/*gallery section*/
+.gallery{
+    padding-top: 100px;
+    position: relative;
+}
+.gallery .absol_red{
+    width: 30px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top: 220px;
+}
+.gallery .left_red{
+    left: 0;
+}
+.gallery .right_red{
+    right: 0;
+}
+.galery__title{
+    font-family: Tinos;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 62px;
+    text-align: center;
+    margin-bottom: 56px;
+}
+.galery__title h2 span{
+    color: #D67E34;
+}
+
+/*team*/
+.team{
+    padding-top: 100px;
+}
+.team .team__title{
+    font-family: Tinos;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 62px;
+    text-align: center;
+    margin-bottom: 56px;
+}
+.team__title h2 span{
+    color: #D67E34;
+}
+
+.carousel-item{
+
+}
+/*footer*/
+.footer{
+    background: url("image/footer_bg.png") no-repeat center/cover;
+    height: 80vh;
 }
