@@ -106,8 +106,48 @@
     }
 
     /*our menu   проблема потім вирішити*/
-    
+
+    .menu__box {
+       display: none;
+    }
+    .menu__active{
+        width: 320px;
+        display: flex;
+    }
+
+    /*carousel section */
+
+    /*gallery section*/
+
+    .gallery__content .col{
+        height: 275px;
+        min-width: 300px;
+    }
+
+    .gallery__content .img1{
+        background-size: cover;
+    }
+    .gallery__content .img2{
+        background-size: cover;
+    }
+    .gallery__content .img3{
+        background-size: cover;
+    }
+    /*absolute*/
+    .absol_red{
+        display: none;
+    }
+
+
+    /*team section*/
+    .team__carousel img{
+        width: 348px;
+    }
+
+
+
+
+
+
+
 }
-
-
-/*carousel section */

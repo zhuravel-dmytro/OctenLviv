@@ -577,10 +577,23 @@ margin-bottom: 130px;
 .galery__title h2 span{
     color: #D67E34;
 }
+.gallery__content .col{
+    height: 275px;
+}
+.gallery__content .img1{
+    background: url("image/img_1_gallery.png") no-repeat center;
+}
+.gallery__content .img2{
+    background: url("image/img_2_gallery.png") no-repeat center;
 
+}
+.gallery__content .img3{
+    background: url("image/img_3_gallery.png") no-repeat center;
+
+}
 /*team*/
 .team{
-    padding-top: 100px;
+    padding: 100px 0px;
 }
 .team .team__title{
     font-family: Tinos;
@@ -595,11 +608,14 @@ margin-bottom: 130px;
     color: #D67E34;
 }
 
-.carousel-item{
 
+.team__carousel img{
+    max-width: 350px;
+    height: auto;
 }
+
 /*footer*/
 .footer{
     background: url("image/footer_bg.png") no-repeat center/cover;
-    height: 80vh;
+    height: 100vh;
 }
