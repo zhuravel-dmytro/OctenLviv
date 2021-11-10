@@ -351,8 +351,8 @@ a {
     column-gap: 8px;
 }
 
-.carousel-control-next-icon,
-.carousel-control-prev-icon
+.carousel-top .carousel-control-next-icon,
+.carousel-top .carousel-control-prev-icon
 {
     width: 5rem;
     height: 5rem;
@@ -360,11 +360,11 @@ a {
     position: absolute;
     top: 150px;
 }
-.carousel-control-next-icon{
+.carousel-top .carousel-control-next-icon{
     transform: rotate(-180deg);
     right: 20px;
 }
-.carousel-control-prev-icon{
+.carousel-top .carousel-control-prev-icon{
     left: 20px;
 }
 carousel-indicators{
@@ -437,4 +437,64 @@ carousel-indicators{
     background: var(--second_color);
     border-radius: 6px;
     padding: 16px 20px;
+}
+
+/*bottom_proposition*/
+.bottom_proposition{
+    padding-top: 70px;
+}
+.carousel__main{
+    display: flex ;
+    column-gap: 30px;
+}
+.carousel__main .in_main{
+    display: flex ;
+    width: 431px;
+    border: 1px solid #E1E5F8;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.carousel__main .in_main img{
+    position: absolute;
+    right: -7px;
+    top: 0px;
+}
+.carousel_bprop .carousel-control-next-icon,
+.carousel_bprop .carousel-control-prev-icon {
+    width: 5rem;
+    height: 5rem;
+    background: url("../images/arrow_carousel.png") no-repeat center/cover;
+    position: absolute;
+}
+.carousel-control-next-icon{
+    transform: rotate(-180deg);
+    right: -40px;
+}
+.carousel-control-prev-icon {
+    left: -40px;
+}
+.carousel__main .in_main .title{
+    color: #0A1A2C;
+    max-width: 168px;
+}
+.carousel__main .in_main .title h4{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+.carousel__main .in_main .title p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.carousel__main .in_main .title .btn-primary {
+    background: #005BB9;
+    border-radius: 4px;
+    padding: 5px 15px;
 }
