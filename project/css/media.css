@@ -1,0 +1,242 @@
+@media only screen and (max-width: 329px) {
+    .wrapper{
+        padding: 0 15px;
+    }
+    .information,
+    .coop,
+    .menu{
+        display: none;
+    }
+
+/*header */
+    .header_center_inner{
+        flex-wrap: nowrap;
+    }
+.info_block{
+    display: none;
+}
+.contact{
+    flex-direction: column-reverse;
+
+}
+    .contact .whatsapp{
+        font-size: 10px;
+        line-height: 12px;
+        padding: 3px;
+        margin-top: 10px;
+    }
+
+    .contact .tel .num{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .contact .tel a{
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+.logo_item img{
+    width: 40px;
+}
+    .logo_item h1{
+       font-size: 18px;
+        line-height: 15px;
+    }
+
+    .logo_item p{
+        font-size: 12px;
+        line-height: 10px;
+    }
+    .input-group .form-control{
+        width: 200px;
+        height: 38px;
+    }
+    .input-group-append{
+        flex-wrap: nowrap;
+    }
+    .input-group-append .btn-full{
+        display: none;
+    }
+    .input-group-append .btn-media{
+        display: block;
+        padding: 10px;
+    }
+    .catalog{
+        column-gap: 20px;
+    }
+    .catalog .btn_full{
+        display: none;
+    }
+    .catalog .btn_media{
+       padding: 10px 7px;
+        width: 34px;
+        height: 34px;
+    }
+
+.user_menu{
+    display: none;
+}
+.user_menu_media{
+    position: absolute;
+    z-index: 1;
+    background: #6bab60;
+    left: 0;
+    bottom: 0;
+}
+
+    /*main*/
+    .carousel-item{
+        padding: 15px;
+    }
+    .carousel__title h3{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .carousel__title a {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .carousel__title .prices{
+        flex-direction: column-reverse;
+
+    }
+
+    .carousel__title .prices p{
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .carousel__title .prices span{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .carousel__title .btn{
+       height: 34px;
+        width: 124px;
+        font-size: 12px;
+        line-height: 14px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .cards{
+        flex-direction: row;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        column-gap: 20px;
+    }
+    .cards .card{
+        min-width: 320px;
+    }
+/*bottom_proposition carousel*/
+    .bottom_proposition{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+.carousel__main .in_main{
+    min-width: 250px;
+    max-height: 124px;
+    padding: 15px;
+}
+    .carousel__main .in_main .title {
+        width: 120px;
+    }
+    .carousel__main .in_main .title h4{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .carousel__main .in_main .title p {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .carousel__main .in_main img{
+        width: 74px;
+        right: 13px;
+        top: 17px;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    /*collapse*/
+
+    .collapse__section{
+        padding-bottom: 50px;
+    }
+    .collapse{
+       flex-grow: 3;
+    }
+
+    .collaps_btn_block{
+        display: flex;
+        overflow-x: scroll;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        column-gap: 10px;
+    }
+    .collaps_btn_block .btn{
+        white-space: nowrap;
+    }
+    .collapse__section .btn_more{
+        font-size: 12px;
+        line-height: 14px;
+        padding: 10px 40px;
+    }
+    .collapse .card .raiting p{
+        font-size: 10px;
+    }
+    .collapse .card .raiting a{
+        font-size: 10px;
+        color: #B0B0B0;
+    }
+    .collapse .card h4{
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    .collapse .card .card_menu .btn {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .card_menu .about_product_ico {
+        display: none;
+    }
+    /*news   */
+    .news h4{
+        margin-bottom: 20px;
+    }
+    .new_inner .data p{
+        font-size: 12px;
+    }
+    .new_inner .data {
+      max-width: 102px;
+    }
+
+    .new_inner .data::before,
+    .new_inner .data::after{
+        display: none;
+    }
+    .line{
+       display: none;
+    }
+
+
+
+
+    /*footer  */
+    .footer .contact{
+        flex-wrap: wrap;
+    }
+    .footer .social {
+        justify-content: start;
+    }
+    .footer .form_footer {
+        font-size: 12px;
+    }
+    .footer .btn{
+       font-size: 12px;
+    }
+}

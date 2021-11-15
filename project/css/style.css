@@ -190,7 +190,15 @@ a {
 }
 
 /*header bottom*/
-
+.btn-media{
+    display: none;
+}
+.user_menu_media{
+    display: none;
+}
+.catalog .btn_media{
+    display: none;
+}
 .header__bottom{
     display: flex;
     justify-content: space-around;
@@ -278,20 +286,12 @@ a {
 .main{
     padding-top: 30px;
 }
-.top_proposition{
-    display: flex;
-    column-gap: 10px;
-
-}
 /*carousel*/
 .carousel_box{
-    min-width: 1000px;
-    max-width: 1000px;
     position: relative;
 }
 .big_carousel{
     background: url("../images/bg_slider.png") no-repeat center/cover;
-    height: 390px;
     box-sizing: border-box;
     border-radius: 20px;
 }
@@ -382,7 +382,7 @@ carousel-indicators{
 .cards{
     display: flex;
     flex-wrap: wrap;
-    row-gap: 10px;
+    row-gap: 25px;
 }
 .cards .card{
     background: #F4F5FA;
@@ -433,7 +433,7 @@ carousel-indicators{
     color: #C2C5DA;
 }
 .main_card .prices .btn-primary{
-    margin-left: 32px;
+    margin-left: 2px;
     background: var(--second_color);
     border-radius: 6px;
     padding: 16px 20px;

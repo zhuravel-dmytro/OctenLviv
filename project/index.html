@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>AVT ZAR</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +13,6 @@
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-
 <header class="header">
     <div class="header__top">
         <div class="wrapper">
@@ -79,15 +80,11 @@
                     </div>
                 </div>
             </div>
-
-
-
-
         </div>
     </div>
     <div class="header__bottom">
         <div class="catalog wrapper">
-            <button class="catalog_btn">
+            <button class="catalog_btn btn_full">
                 <div class="btn_inner">
                     <div></div>
                     <div></div>
@@ -95,10 +92,20 @@
                 </div>
                 <p>Каталог</p>
             </button>
+            <button class="catalog_btn btn_media">
+                <div class="btn_inner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </button>
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="Поиск по наименованию или артикулу" aria-label="" aria-describedby="basic-addon1">
                 <div class="input-group-append">
-                    <button class="btn btn-success" type="button">Найти</button>
+                    <button class="btn btn-success btn-full" type="button">Найти</button>
+                    <button class="btn btn-media btn-success" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg></button>
                 </div>
             </div>
             <div class="user_menu">
@@ -116,6 +123,14 @@
                         нет товаров</a>
                 </div>
             </div>
+            <div class="user_menu_media">
+                <a href="#"><img src="images/home1.svg" alt=""></a>
+                <a href="#"><img src="images/" alt=""></a>
+                <a href="#"><img src="" alt=""></a>
+                <a href="#"><img src="" alt=""></a>
+                </div>
+            </div>
+
         </div>
 
 
@@ -123,119 +138,125 @@
 </header>
 <main class="main">
     <div class="top_proposition wrapper">
-        <div class="carousel_box">
-            <div id="carouselExampleInterval" class="carousel carousel-top slide " data-bs-ride="carousel" >
-                <div class="carousel-inner">
-                    <div class="carousel-item big_carousel active" data-bs-interval="10000">
-                        <div class="wrap">
-                            <div class="carousel__title">
-                                <h3>Сцепление в сборе</h3>
-                                <a href="#">0AMCLUTCH</a>
-                                <div class="prices">
-                                    <p> 14 499,99 ₽</p>
-                                    <span>18 550,99 ₽ </span>
-                                </div>
-                                <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                                </svg>В корзину</button>
-                            </div>
-                            <div class="img">
-                                <img class="d-block w-100" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" alt="2 slide" src="images/product_inslider.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item big_carousel" data-bs-interval="2000">
-                        <div class="wrap">
-                            <div class="carousel__title">
-                                <h3>Сцепление в сборе</h3>
-                                <a href="#">0AMCLUTCH</a>
-                                <div class="prices">
-                                    <p> 15 499,99 ₽</p>
-                                    <span>19 550,99 ₽ </span>
-                                </div>
-                                <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                                </svg>В корзину</button>
-                            </div>
-                            <div class="img">
-                                <img class="d-block w-100" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" alt="2 slide" src="images/product_inslider.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item big_carousel" data-bs-interval="2000">
-                        <div class="wrap">
-                            <div class="carousel__title">
-                                <h3>Сцепление в сборе</h3>
-                                <a href="#">0AMCLUTCH</a>
-                                <div class="prices">
-                                    <p> 16 499,99 ₽</p>
-                                    <span>20 550,99 ₽ </span>
-                                </div>
-                                <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                                </svg>В корзину</button>
-                            </div>
-                            <div class="img">
-                                <img class="d-block w-100" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" alt="2 slide" src="images/product_inslider.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden"></span>
-                </button>
-            </div>
-        </div>
-        <div class="cards">
-            <div class="card">
-                <span class="inf_item">Акция</span>
-                <div class="card-body">
-                    <div class="img-card"><img src="images/avt-zap_main_page_v01%20(1)йцу%205.png" alt="img"></div>
-                        <div class="main_card">
-                            <h4 class="card-title">Обгонная муфта
-                            гидротрансформатор</h4>
-                            <p class="card-text">
-                                BW-SP-2 SONNAX
-                            </p>
-                            <div class="prices">
-                                <p class="price">4 430₽</p>
-                                <span class="old_price">5 430₽</span>
-                                <a href="#!" class="btn btn-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                         class="bi bi-cart2" viewBox="0 0 16 16">
+        <div class="row proposition_row gy-4">
+            <div class="col col-sm-12 col-md-9">
+                <div class="carousel_box">
+                    <div id="carouselExampleInterval" class="carousel carousel-top slide " data-bs-ride="carousel" >
+                    <div class="carousel-inner">
+                        <div class="carousel-item big_carousel active" data-bs-interval="10000">
+                            <div class="wrap">
+                                <div class="carousel__title">
+                                    <h3>Сцепление в сборе</h3>
+                                    <a href="#">0AMCLUTCH</a>
+                                    <div class="prices">
+                                        <p> 14 499,99 ₽</p>
+                                        <span>18 550,99 ₽ </span>
+                                    </div>
+                                    <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
                                         <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                                    </svg>
-                                </a>
+                                    </svg>В корзину</button>
+                                </div>
+                                <div class="img">
+                                    <img class="d-block w-100" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" alt="2 slide" src="images/product_inslider.png">
+                                </div>
                             </div>
                         </div>
-                </div>
-            </div>
-            <div class="card">
-                <span class="inf_item">Акция</span>
-                <div class="card-body">
-                    <div class="img-card"><img src="images/avt-zap_main_page_v01%20(1)йцу%207.png" alt="img"></div>
-                    <div class="main_card">
-                        <h4 class="card-title">Комплект фрикционных дисков</h4>
-                        <p class="card-text">
-                            BW-SP-2 SONNAX
-                        </p>
-                        <div class="prices">
-                            <p class="price">4 430₽</p>
-                            <span class="old_price">5 430₽</span>
-                            <a href="#!" class="btn btn-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                     class="bi bi-cart2" viewBox="0 0 16 16">
-                                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                                </svg>
-                            </a>
+                        <div class="carousel-item big_carousel" data-bs-interval="2000">
+                            <div class="wrap">
+                                <div class="carousel__title">
+                                    <h3>Сцепление в сборе</h3>
+                                    <a href="#">0AMCLUTCH</a>
+                                    <div class="prices">
+                                        <p> 15 499,99 ₽</p>
+                                        <span>19 550,99 ₽ </span>
+                                    </div>
+                                    <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                                    </svg>В корзину</button>
+                                </div>
+                                <div class="img">
+                                    <img class="d-block w-100" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" alt="2 slide" src="images/product_inslider.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item big_carousel" data-bs-interval="2000">
+                            <div class="wrap">
+                                <div class="carousel__title">
+                                    <h3>Сцепление в сборе</h3>
+                                    <a href="#">0AMCLUTCH</a>
+                                    <div class="prices">
+                                        <p> 16 499,99 ₽</p>
+                                        <span>20 550,99 ₽ </span>
+                                    </div>
+                                    <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                                    </svg>В корзину</button>
+                                </div>
+                                <div class="img">
+                                    <img class="d-block w-100" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" alt="2 slide" src="images/product_inslider.png">
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden"></span>
+                    </button>
                 </div>
+                 </div>
+            </div>
+            <div class="col col-sm-12 col-md-3">
+                    <div class="cards">
+                        <div class="card">
+                            <span class="inf_item">Акция</span>
+                            <div class="card-body">
+                                <div class="img-card"><img src="images/avt-zap_main_page_v01%20(1)йцу%205.png" alt="img"></div>
+                                <div class="main_card">
+                                    <h4 class="card-title">Обгонная муфта
+                                        гидротрансформатор</h4>
+                                    <p class="card-text">
+                                        BW-SP-2 SONNAX
+                                    </p>
+                                    <div class="prices">
+                                        <p class="price">4 430₽</p>
+                                        <span class="old_price">5 430₽</span>
+                                        <a href="#!" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                 class="bi bi-cart2" viewBox="0 0 16 16">
+                                                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <span class="inf_item">Акция</span>
+                            <div class="card-body">
+                                <div class="img-card"><img src="images/avt-zap_main_page_v01%20(1)йцу%207.png" alt="img"></div>
+                                <div class="main_card">
+                                    <h4 class="card-title">Комплект фрикционных дисков</h4>
+                                    <p class="card-text">
+                                        BW-SP-2 SONNAX
+                                    </p>
+                                    <div class="prices">
+                                        <p class="price">4 430₽</p>
+                                        <span class="old_price">5 430₽</span>
+                                        <a href="#!" class="btn btn-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                 class="bi bi-cart2" viewBox="0 0 16 16">
+                                                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
@@ -327,194 +348,196 @@
                 Сейчас покупают
             </button>
         </p>
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                <img src="images/collaps_img.png" alt="">
-                <div class="raiting">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                    </svg>
-                    <p>4.5</p>
-                    <a href="#">10 отзывов</a>
-                </div>
-                <h4>Intermediate accumelator sleeve</h4>
-                <div class="price">
-                    <p class="widthout_price" >ЦЕНА</p>
-                    <a href="#">по запросу</a>
-                </div>
-                <div class="card_menu">
-                    <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
-                    </svg>В корзину</button>
-                    <a href="#"><img src="images/icon%20hurt.png" alt=""></a>
-                    <a href="#"><img src="images/icon%20murcet.png" alt=""></a>
-                </div>
-            </div>
-            <div class="card card-body">
-                <img src="images/collaps_imgsale.png" alt="">
-                <div class="raiting">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                    </svg>
-                    <p>4.5</p>
-                    <a href="#">10 отзывов</a>
-                </div>
-                <h4>Комплект фрикционных дисков</h4>
-                <div class="price">
-                    <p class="width_price">
-                        4 430₽
-                    </p>
-                    <span>5 430₽</span>
-                </div>
-                <div class="card_menu">
-                    <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
-                    </svg>В корзину</button>
-                    <a href="#"><img src="images/icon%20hurt.png" alt=""></a>
-                    <a href="#"><img src="images/icon%20murcet.png" alt=""></a>
-                </div>
-            </div>
-            <div class="card card-body">
-                <img src="images/collaps_img.png" alt="">
-                <div class="raiting">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                    </svg>
-                    <p>4.5</p>
-                    <a href="#">10 отзывов</a>
-                </div>
-                <h4>Intermediate accumelator sleeve</h4>
-                <div class="price">
-                    <p class="widthout_price" >ЦЕНА</p>
-                    <a href="#">по запросу</a>
-                </div>
-                <div class="card_menu">
-                    <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
-                    </svg>В корзину</button>
-                    <a href="#"><img src="images/icon%20hurt.png" alt=""></a>
-                    <a href="#"><img src="images/icon%20murcet.png" alt=""></a>
-                </div>
-            </div>
-            <div class="card card-body">
-                <img src="images/collaps_img3.png" alt="">
-                <div class="raiting">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                    </svg>
-                    <p>4.5</p>
-                    <a href="#">10 отзывов</a>
-                </div>
-                <h4>Intermediate accumelator sleeve</h4>
-                <div class="price">
-                    <p class="widthout_price" >ЦЕНА</p>
-                    <a href="#">по запросу</a>
-                </div>
-                <div class="card_menu">
-                    <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
-                    </svg>В корзину</button>
-                    <a href="#"><img src="images/icon%20hurt.png" alt=""></a>
-                    <a href="#"><img src="images/icon%20murcet.png" alt=""></a>
-                </div>
-            </div>
-            <div class="card card-body">
-                <img src="images/collaps_img.png" alt="">
-                <div class="raiting">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                    </svg>
-                    <p>4.5</p>
-                    <a href="#">10 отзывов</a>
-                </div>
-                <h4>Intermediate accumelator sleeve</h4>
-                <div class="price">
-                    <p class="widthout_price" >ЦЕНА</p>
-                    <a href="#">по запросу</a>
-                </div>
-                <div class="card_menu">
-                    <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
-                    </svg>В корзину</button>
-                    <a href="#"><img src="images/icon%20hurt.png" alt=""></a>
-                    <a href="#"><img src="images/icon%20murcet.png" alt=""></a>
-                </div>
-            </div>
-            <div class="card card-body">
-                <img src="images/collaps_imgsale.png" alt="">
-                <div class="raiting">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                    </svg>
-                    <p>4.5</p>
-                    <a href="#">10 отзывов</a>
-                </div>
-                <h4>Комплект фрикционных дисков</h4>
-                <div class="price">
-                    <p class="width_price">
-                        4 430₽
-                    </p>
-                    <span>5 430₽</span>
-                </div>
-                <div class="card_menu">
-                    <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
-                    </svg>В корзину</button>
-                    <a href="#"><img src="images/icon%20hurt.png" alt=""></a>
-                    <a href="#"><img src="images/icon%20murcet.png" alt=""></a>
-                </div>
-            </div>
-            <div class="card card-body">
-                <img src="images/collaps_img.png" alt="">
-                <div class="raiting">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                    </svg>
-                    <p>4.5</p>
-                    <a href="#">10 отзывов</a>
-                </div>
-                <h4>Intermediate accumelator sleeve</h4>
-                <div class="price">
-                    <p class="widthout_price" >ЦЕНА</p>
-                    <a href="#">по запросу</a>
-                </div>
-                <div class="card_menu">
-                    <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
-                    </svg>В корзину</button>
-                    <a href="#"><img src="images/icon%20hurt.png" alt=""></a>
-                    <a href="#"><img src="images/icon%20murcet.png" alt=""></a>
-                </div>
-            </div>
-            <div class="card card-body">
-                <img src="images/collaps_img3.png" alt="">
-                <div class="raiting">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                    </svg>
-                    <p>4.5</p>
-                    <a href="#">10 отзывов</a>
-                </div>
-                <h4>Intermediate accumelator sleeve</h4>
-                <div class="price">
-                    <p class="widthout_price" >ЦЕНА</p>
-                    <a href="#">по запросу</a>
-                </div>
-                <div class="card_menu">
-                    <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
-                    </svg>В корзину</button>
-                    <a href="#"><img src="images/icon%20hurt.png" alt=""></a>
-                    <a href="#"><img src="images/icon%20murcet.png" alt=""></a>
-                </div>
+        <div class="container collapse" id="collapseExample">
+            <div class="row">
+               <div class=" col-6 col-md-3 card card-body">
+                   <img src="images/collaps_img.png" alt="">
+                   <div class="raiting">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                       </svg>
+                       <p>4.5</p>
+                       <a href="#">10 отзывов</a>
+                   </div>
+                   <h4>Intermediate accumelator sleeve</h4>
+                   <div class="price">
+                       <p class="widthout_price" >ЦЕНА</p>
+                       <a href="#">по запросу</a>
+                   </div>
+                   <div class="card_menu">
+                       <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                           <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                       </svg>В корзину</button>
+                       <a href="#"><img src="images/icon%20hurt.png" alt=""></a>
+                       <a class="about_product_ico" href="#"><img src="images/icon%20murcet.png" alt=""></a>
+                   </div>
+               </div>
+               <div class=" col-6 col-md-3 card card-body">
+                   <img src="images/collaps_imgsale.png" alt="">
+                   <div class="raiting">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                       </svg>
+                       <p>4.5</p>
+                       <a href="#">10 отзывов</a>
+                   </div>
+                   <h4>Комплект фрикционных дисков</h4>
+                   <div class="price">
+                       <p class="width_price">
+                           4 430₽
+                       </p>
+                       <span>5 430₽</span>
+                   </div>
+                   <div class="card_menu">
+                       <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                           <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                       </svg>В корзину</button>
+                       <a href="#"><img src="images/icon%20hurt.png" alt=""></a>
+                       <a class="about_product_ico" href="#"><img src="images/icon%20murcet.png" alt=""></a>
+                   </div>
+               </div>
+               <div class=" col-6 col-md-3 card card-body">
+                   <img src="images/collaps_img.png" alt="">
+                   <div class="raiting">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                       </svg>
+                       <p>4.5</p>
+                       <a href="#">10 отзывов</a>
+                   </div>
+                   <h4>Intermediate accumelator sleeve</h4>
+                   <div class="price">
+                       <p class="widthout_price" >ЦЕНА</p>
+                       <a href="#">по запросу</a>
+                   </div>
+                   <div class="card_menu">
+                       <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                           <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                       </svg>В корзину</button>
+                       <a href="#"><img src="images/icon%20hurt.png" alt=""></a>
+                       <a class="about_product_ico" href="#"><img src="images/icon%20murcet.png" alt=""></a>
+                   </div>
+               </div>
+               <div class=" col-6 col-md-3 card card-body">
+                   <img src="images/collaps_img3.png" alt="">
+                   <div class="raiting">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                       </svg>
+                       <p>4.5</p>
+                       <a href="#">10 отзывов</a>
+                   </div>
+                   <h4>Intermediate accumelator sleeve</h4>
+                   <div class="price">
+                       <p class="widthout_price" >ЦЕНА</p>
+                       <a href="#">по запросу</a>
+                   </div>
+                   <div class="card_menu">
+                       <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                           <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                       </svg>В корзину</button>
+                       <a href="#"><img src="images/icon%20hurt.png" alt=""></a>
+                       <a class="about_product_ico" href="#"><img src="images/icon%20murcet.png" alt=""></a>
+                   </div>
+               </div>
+               <div class=" col-6 col-md-3 card card-body">
+                   <img src="images/collaps_img.png" alt="">
+                   <div class="raiting">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                       </svg>
+                       <p>4.5</p>
+                       <a href="#">10 отзывов</a>
+                   </div>
+                   <h4>Intermediate accumelator sleeve</h4>
+                   <div class="price">
+                       <p class="widthout_price" >ЦЕНА</p>
+                       <a href="#">по запросу</a>
+                   </div>
+                   <div class="card_menu">
+                       <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                           <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                       </svg>В корзину</button>
+                       <a href="#"><img src="images/icon%20hurt.png" alt=""></a>
+                       <a class="about_product_ico" href="#"><img src="images/icon%20murcet.png" alt=""></a>
+                   </div>
+               </div>
+               <div class=" col-6 col-md-3 card card-body">
+                   <img src="images/collaps_imgsale.png" alt="">
+                   <div class="raiting">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                       </svg>
+                       <p>4.5</p>
+                       <a href="#">10 отзывов</a>
+                   </div>
+                   <h4>Комплект фрикционных дисков</h4>
+                   <div class="price">
+                       <p class="width_price">
+                           4 430₽
+                       </p>
+                       <span>5 430₽</span>
+                   </div>
+                   <div class="card_menu">
+                       <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                           <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                       </svg>В корзину</button>
+                       <a href="#"><img src="images/icon%20hurt.png" alt=""></a>
+                       <a class="about_product_ico" href="#"><img src="images/icon%20murcet.png" alt=""></a>
+                   </div>
+               </div>
+               <div class=" col-6 col-md-3 card card-body">
+                   <img src="images/collaps_img.png" alt="">
+                   <div class="raiting">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                       </svg>
+                       <p>4.5</p>
+                       <a href="#">10 отзывов</a>
+                   </div>
+                   <h4>Intermediate accumelator sleeve</h4>
+                   <div class="price">
+                       <p class="widthout_price" >ЦЕНА</p>
+                       <a href="#">по запросу</a>
+                   </div>
+                   <div class="card_menu">
+                       <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                           <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                       </svg>В корзину</button>
+                       <a href="#"><img src="images/icon%20hurt.png" alt=""></a>
+                       <a class="about_product_ico" href="#"><img src="images/icon%20murcet.png" alt=""></a>
+                   </div>
+               </div>
+               <div class=" col-6 col-md-3 card card-body">
+                   <img src="images/collaps_img3.png" alt="">
+                   <div class="raiting">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                       </svg>
+                       <p>4.5</p>
+                       <a href="#">10 отзывов</a>
+                   </div>
+                   <h4>Intermediate accumelator sleeve</h4>
+                   <div class="price">
+                       <p class="widthout_price" >ЦЕНА</p>
+                       <a href="#">по запросу</a>
+                   </div>
+                   <div class="card_menu">
+                       <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                           <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                       </svg>В корзину</button>
+                       <a href="#"><img src="images/icon%20hurt.png" alt=""></a>
+                       <a class="about_product_ico" href="#"><img src="images/icon%20murcet.png" alt=""></a>
+                   </div>
+               </div>
             </div>
         </div>
         <div class="collapse" id="collapseExample2">
@@ -606,8 +629,8 @@
     <h4 class="wrapper">НОВОСТИ</h4>
     <div class="line"></div>
     <div class="new_inner wrapper">
-        <div class="row">
-            <div class="col col-md-3 gx-5 col_news">
+        <div class="row gy-5">
+            <div class="col col-12 col-md-3 gx-4 gx-md-5  col_news">
                 <div class="data"><p>3 ноября</p></div>
                 <a href="#">Изменения на сайте</a>
                 <p class="txt">Недавно на сайте мы ввели
@@ -618,7 +641,7 @@
                     пользователей. Реакция посетителей
                     не заставила себя долго ждать...</p>
             </div>
-            <div class="col col-md-3 gx-5 col_news">
+            <div class="col col-12 col-md-3 gx-4 gx-md-5 col_news">
                 <div class="data"><p>2 ноября</p></div>
                 <a href="#">Вышла новая версия для
                     мобильных приложений</a>
@@ -627,7 +650,7 @@
                     — добавлена синхронизация с сервером;
                     — испрвление ошибок.</p>
             </div>
-            <div class="col col-md-3 gx-5 col_news">
+            <div class="col col-12 col-md-3 gx-4 gx-md-5 col_news">
                 <div class="data"><p>1 ноября</p></div>
                 <a href="#">Очередная порция обновлений для
                     мобильных приложений</a>
@@ -638,7 +661,7 @@
                     — возможность поиска;
                     — исправление ошибок.</p>
             </div>
-            <div class="col col-md-3 gx-5 col_news">
+            <div class="col col-12 col-md-3 gx-4 gx-md-5 col_news">
                 <div class="data"><p>31 октября</p></div>
                 <a href="#">Интерфейс заказов для покупателей
                     стал более функциональным</a>
@@ -654,7 +677,7 @@
 <footer class="footer">
     <div class="footer_inner wrapper">
         <div class="row">
-            <div class="col col-md-2">
+            <div class="col col-sm-12 col-md-2">
                 <h3>КАТАЛОГ</h3>
                 <ul>
                     <li><a href="#">Каталог запчастей</a></li>
@@ -667,7 +690,7 @@
                     <li><a href="#">Акции</a></li>
                 </ul>
             </div>
-            <div class="col col-md-2">
+            <div class="col col-12 col-md-2">
                 <h3>РУБРИКАТОР</h3>
                 <ul>
                     <li><a href="#">Доставка</a></li>
@@ -679,7 +702,7 @@
                     <li><a href="#">Контактная информация</a></li>
                 </ul>
             </div>
-            <div class="col col-md-3">
+            <div class="col col-12 col-md-3">
                 <h3>ИНФОРМАЦИЯ</h3>
                 <ul>
                     <li><a href="#">Пользовательское соглашение
@@ -692,7 +715,7 @@
                 <div><a href="#">Мы принимаем</a></div>
                 <img src="images/kisspng-mastercard-money-foothills-florist-business-visa-visa-mastercard-5b4d917e5dd4a1%201.png" alt="visa_mastercard">
             </div>
-            <div class="col col-md-5">
+            <div class="col col-12 col-md-5">
               <div class="contact">
                   <div class="contact_item">
                       <h3>КОНТАКТЫ</h3>
