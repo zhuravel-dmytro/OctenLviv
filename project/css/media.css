@@ -67,10 +67,11 @@
     .catalog .btn_full{
         display: none;
     }
-    .catalog .btn_media{
-       padding: 10px 7px;
+    .catalog .btn_media_bur{
+        padding: 10px 7px;
         width: 34px;
         height: 34px;
+        display: block;
     }
 
 .user_menu{
@@ -82,6 +83,8 @@
     background: #6bab60;
     left: 0;
     bottom: 0;
+    display: flex;
+
 }
 
     /*main*/
@@ -129,6 +132,17 @@
     .cards .card{
         min-width: 320px;
     }
+
+    .collapse .card .card_menu .btn{
+        font-size: 10px;
+        padding: 2px 9px;
+    }
+    .collapse .card .card_menu {
+        column-gap: 2px;
+        margin: 5px 0px;
+        align-items: center;
+    }
+
 /*bottom_proposition carousel*/
     .bottom_proposition{
         margin-top: 20px;
