@@ -386,7 +386,7 @@ carousel-indicators{
 /*main cards*/
 .cards{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     row-gap: 25px;
 }
 .cards .card{
@@ -402,7 +402,7 @@ carousel-indicators{
     color: #0F2438;
 }
 .row .card-body{
-   margin-bottom: 15px;
+    display: flex;
 }
 .main_card h4{
     font-weight: 500;
